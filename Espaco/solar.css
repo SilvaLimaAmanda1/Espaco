@@ -1,0 +1,223 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Patrick Hand', cursiva;
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    overflow: hidden;
+}
+
+button {
+    margin-left: -360px;
+    width: 50%;
+    height: 40px;
+    font-size: 15px;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 1px solid #32B0DA;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.container {
+    font-size: 10px;
+    width: 60em;
+    height: 60em;
+    position: relative;
+}
+
+.Sol {
+    position: absolute;
+    top: 25em;
+    left: 25em;
+    width: 10em;
+    height: 10em;
+    background-color: yellow;
+    border-radius: 50%;
+    box-shadow: 0 0 3em white;
+}
+
+.Terra, .lua, .Marte, .Saturno, .Plutao {
+    position: absolute;
+    border-style: solid;
+    border-color: transparent transparent transparent white;
+    border-width: 0em 0.0em 0 0.1em;
+    border-radius: 50%;
+}
+
+.Terra {
+    top: 5em;
+    right: 5em;
+    width: 30em;
+    height: 30em;
+    animation: orbit 36.5s linear infinite;
+}
+
+.lua {
+    top: 0em;
+    right: 0em;
+    width: 8em;
+    height: 8em;
+    animation: orbit 2.7s linear infinite;
+}
+
+.Marte {
+    top: 10em;
+    right: 10em;
+    width: 40em;
+    height: 40em;
+    animation: orbit 68.9s linear infinite;
+}
+
+.Saturno {
+    top: 15em;
+    right: 15em;
+    width: 50em;
+    height: 50em;
+    animation: orbit 107.6s linear infinite;
+}
+
+.Plutao {
+    top: 20em;
+    right: 20em;
+    width: 60em;
+    height: 60em;
+    animation: orbit 248.0s linear infinite;
+}
+
+.Terra::before, .lua::before, .Marte::before, .Saturno::before, .Plutao::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+}
+
+.Terra::before {
+    top: 2.8em;
+    right: 2.8em;
+    width: 3em;
+    height: 3em;
+    background-color: aqua;
+}
+
+.lua::before {
+    top: 0.8em;
+    right: 0.2em;
+    width: 1.2em;
+    height: 1.2em;
+    background-color: silver;
+}
+
+.Marte::before {
+    top: 4.8em;
+    right: 4.8em;
+    width: 3em;
+    height: 3em;
+    background-color: red;
+}
+
+.Saturno::before {
+    top: 7.8em;
+    right: 7.8em;
+    width: 5em;
+    height: 5em;
+    background-color: goldenrod;
+}
+
+.Plutao::before {
+    top: 9.8em;
+    right: 9.8em;
+    width: 1.5em;
+    height: 1.5em;
+    background-color: lightgrey;
+}
+
+@keyframes orbit {
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* Adicione o espaço para os cabeçalhos de código CSS anteriores */
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    overflow: hidden;
+}
+
+button {
+    width: 100%;
+    max-width: 200px; /* Limite de largura do botão */
+    height: 40px;
+    font-size: 15px;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 1px solid #32B0DA;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.container {
+    font-size: 10px;
+    width: 90vw; /* Use uma unidade relativa para largura */
+    max-width: 60em; /* Limite de largura */
+    height: 90vw; /* Use uma unidade relativa para altura */
+    max-height: 60em; /* Limite de altura */
+    position: relative;
+}
+
+/* Estilos para os planetas e luas */
+
+.Sol {
+    /* Adicione estilos do Sol */
+}
+
+.Terra, .lua, .Marte, .Saturno, .Plutao {
+    /* Estilos comuns para planetas e luas */
+}
+
+/* Adapte os estilos dos planetas e luas conforme necessário para telas menores */
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 80vw;
+        max-width: 40em;
+        height: 80vw;
+        max-height: 40em;
+    }
+
+    button {
+        margin-left: 0; /* Remova a margem esquerda para centralizar */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 90vw;
+        max-width: 30em;
+        height: 90vw;
+        max-height: 30em;
+    }
+}

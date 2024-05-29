@@ -1,0 +1,321 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Patrick Hand', cursiva;
+    box-sizing: border-box;
+}
+/*scroll inicio*/
+::-webkit-scrollbar{
+	width: 12px;
+	background-color: #e9ff99;
+}
+::-webkit-scrollbar-thumb{
+	background-color: orangered;
+	border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover{
+	background-color: blue;
+}
+/*scroll final*/
+/**/
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+body {
+    color: #FFFFFF;
+    background-color: #e9ff99;
+    background: rgb(0,114,233);
+    background: linear-gradient(13deg, rgba(0,114,233,1) 16%, rgba(253,148,0,1) 60%, rgba(0,0,0,0.9864320728291317) 87%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.glass-container {
+    display: block;
+    max-width: 72vw;
+    margin-top: 10vh;
+    margin-bottom: 30px;
+    background: rgba(0, 0, 0, 0.56);
+    padding: 50px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.6px);
+    -webkit-backdrop-filter: blur(11.6px);
+}
+
+.logo {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: -10px;
+    filter: drop-shadow(3px 3px 3px orangered);
+}
+/*Inicio do menu*/
+ul.nav-links {
+    margin: 0;
+    float: right;
+    display: flex;
+    list-style: none;
+}
+
+.nav-link {
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.nav-link:hover {
+    color: orangered;
+    border-style: double;
+}
+/*Final do menu*/
+/*Inicio dos cards*/
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.main {
+    width: 22%;
+    margin: 10px;
+    float: left;
+    text-align: center;
+    background: transparent;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: .10s;
+}
+
+.main:hover {
+    box-shadow: 0 3px 66px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translate(10px, -8px);
+}
+
+.main img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.main .details {
+    padding: 20px;
+}
+
+.main .details ul {
+    text-align: left;
+    margin: 10px 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.main .details ul li {
+    margin: 5px 0;
+}
+
+.main p {
+    text-align: center;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.title {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: yellow;
+    margin: 10px 0;
+}
+
+.main button {
+    background-color: blue;
+    height: 40px;
+    border: none;
+    padding: 4px;
+    width: 80%;
+    color: white;
+    font-size: 1rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.main button:hover {
+    background-color: darkblue;
+}
+/*Final dos cards*/
+
+/*Inicio roda pé*/
+footer {
+    display: flex;
+    background-color: #050505;
+    padding: 10px 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: orangered;
+}
+
+footer p {
+    font-size: 13px;
+    color: orangered;
+    cursor: pointer;
+}
+
+footer .logo {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: -10px;
+    filter: drop-shadow(3px 3px 3px orangered);
+}
+
+footer a {
+    text-align: center;
+}
+
+footer i {
+    font-size: 30px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    color: orangered;
+}
+
+footer i:hover {
+    color: #0333be;
+}
+/*Final do roda pé*/
+
+/* Adicione o espaço para os cabeçalhos de código CSS anteriores */
+
+/* Adicione um estilo de reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o corpo */
+body {
+    font-family: 'Patrick Hand', cursive;
+    color: #FFFFFF;
+    background-color: #e9ff99;
+    background: rgb(0, 114, 233);
+    background: linear-gradient(13deg, rgba(0, 114, 233, 1) 16%, rgba(253, 148, 0, 1) 60%, rgba(0, 0, 0, 0.9864320728291317) 87%);
+}
+
+/* Estilos para a navegação */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 600;
+    filter: drop-shadow(3px 3px 3px orangered);
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-link {
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.nav-link:hover {
+    color: orangered;
+    border-style: double;
+}
+
+/* Estilos para o conteúdo */
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.main {
+    width: 300px; /* Defina um tamanho fixo para os cartões */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.main img {
+    max-width: 100%;
+    height: auto;
+}
+
+.details {
+    margin-top: 20px;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #050505;
+    color: orangered;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: orangered;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #0333be;
+}
+
+/* Adaptações para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link {
+        margin: 10px 0;
+    }
+}
